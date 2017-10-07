@@ -144,8 +144,23 @@ input[type] {
 input[type=submit] {
     background-color: darkcyan;
 }
+/*selektor attr=val w opisie posiada dokladnie ten ciag znakow*/
 
+input[type~="opis"] {
+    background-color: black;
+}
 
+input[type*="pia"] {
+    background-color: blue;
+}
+
+input[type^="pocz"] {
+    background-color: blue;
+}
+
+input[type$="iec"] {
+    background-color: blue;
+}
 
 
 
