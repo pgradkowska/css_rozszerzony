@@ -1,0 +1,48 @@
+
+* {margin: 0;
+padding: 0;}
+
+/*seketor elementu*/
+p {
+    font-size: 20px;
+}
+/*selektor identyfikatora*/
+#testowy {
+    background-color: aqua;
+}
+/*selektor klasy */
+
+.testowy_inner {
+    color: green;
+    font-size: 26px;    
+}
+/*selektor potomka*/
+#selektor_potomka p {
+    font-size: 30px;
+    color: red;
+}
+/*selektor dziecka*/
+#selektor_dziecka > p {
+    font-size: 38px;
+    color: violet;
+}
+/*selektor braci*/
+#selektor_braci span + p {
+    color: black;
+    background-color: aquamarine
+}
+/*psedoelementy nieistnieja bez ustawionej wlasciwosci content*/
+#pseudoelementy h1::before {
+    content: ' Lorem';
+    color: red;
+}
+#pseudoelementy h1::after {
+    content: 'Lorem ';
+    color: green;
+}
+#pseudoelementy h1::first-letter {
+    color: yellow;
+}
+#pseudoelementy .first_line::first-line {
+    color: brown
+}
