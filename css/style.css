@@ -90,6 +90,8 @@ div:lang(pl) {
 #lista-dzieci ul .list_item:last-child {
         size: 20px;
         color: red;
+}
+
 #jedyne_dziecko span:only-child {
     font-style: italic;
     font-size: 30px;
@@ -101,3 +103,57 @@ div:empty {
     height: 300px;
     background-color: red;
 }
+/*pseudoklasy :nth-child() i nth-last-child () sluza do okreslania elementow dzieci mozemy wziac konkretne dziecko parzyste/nieparzyste lub utworzyc dokladny wzor wyboru*/
+#kontener .iner {
+    display: inline-block;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+    width: 33%;
+    float: left;
+    margin-right: 0.5%;
+}
+
+/*
+#kontener .iner:nth-child(3),
+#kontener .iner:nth-child(6) {
+    margin-right: 0;
+}
+*/
+
+#kontener .iner:nth-child(3n+3) {
+    margin-right: 0;
+}
+    
+
+#kontener .iner:nth-child(even) {
+    background-color: yellow;
+}
+    
+
+.clear {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+/*selektor atrybutow*/
+input[type] {
+    background-color: darkgreen;
+}
+
+input[type=submit] {
+    background-color: darkcyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
