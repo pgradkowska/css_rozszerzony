@@ -59,3 +59,45 @@ p {
 #linki a:active {
     color: orange;
 }
+/*pseudoklasa focus kiedy uzupelniamy inputy*/
+#inputy input {
+    width: 99%;
+    margin-bottom: 20px;
+}
+#inputy input:focus {
+    border: 3px solid red;
+}
+/*pseudoklasa targer=t okresla co ma sie stac z elementem do ktorego prowadzi kotwica*/
+:target {
+    border: 1px solid black;
+}
+
+div {        
+    background-color: grey;
+}
+div:lang(pl) {
+    background-color: yellow;
+}
+#lista-dzieci ul .list_item {
+    font-size: 20px;
+    color: green;
+}
+
+#lista-dzieci ul .list_item:first-child {
+        size: 20px;
+        color: blue;
+}
+#lista-dzieci ul .list_item:last-child {
+        size: 20px;
+        color: red;
+#jedyne_dziecko span:only-child {
+    font-style: italic;
+    font-size: 30px;
+    color:greenyellow;
+}
+div:empty {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
