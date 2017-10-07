@@ -46,3 +46,16 @@ p {
 #pseudoelementy .first_line::first-line {
     color: brown
 }
+/*pseudoklasa visited do stylowania nieodwiedzonych linkow*/
+#linki a:link {
+    color: grey;
+}
+#linki a:visited {
+    color: pink;
+}
+#linki a:hover {
+    color: red;
+}
+#linki a:active {
+    color: orange;
+}
