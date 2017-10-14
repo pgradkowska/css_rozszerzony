@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moje portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+</head>
+
+<body>
+    <nav id="menu">
+        <label for="drop" class=toggle>Menu</label>
+        <input type="checkbox" id="drop" />
+                  
+                   <ul>
+            <li><a href="#o_mnie">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#portfolio">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <!--   header relatywny, div absolutny-->
+    <header id="header">
+        <div class="header-inner">
+            <h1>Paulina <span>G</span></h1>
+            <h2>Front End developer</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 id="o_mnie">O mnie</h2>
+        <figure>
+            <img src="img/jan-nowak.jpg" alt="Jan Nowak portret">
+        </figure>
+        <article class="about_info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quod consequatur excepturi, similique blanditiis deleniti possimus alias error eligendi odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quod consequatur excepturi, similique blanditiis deleniti possimus alias error eligendi odit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quod consequatur excepturi, similique blanditiis deleniti possimus alias error eligendi odit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quod consequatur excepturi, similique blanditiis deleniti possimus alias error eligendi odit.</p>
+        </article>
+        <div class="clear"></div>
+
+
+    </section>
+    <section id=skills>
+
+        <h2 id="skills">Umiejetności</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tenetur aperiam, iure nisi similique qui dignissimos, at mollitia consectetur voluptatum?</p>
+
+        <div id="skills_ikony">
+            <figure class="skills_ikony_item">
+                <img src="icons/css3.png" alt="">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            <figure class="skills_ikony_item">
+                <img src="icons/html5.png" alt="">
+                <figcaption>HTML5</figcaption>
+            </figure>
+            <figure class="skills_ikony_item">
+                <img src="icons/jquery.png" alt="">
+                <figcaption>JQuery</figcaption>
+            </figure>
+            <figure class="skills_ikony_item">
+                <img src="icons/js.png" alt="">
+                <figcaption>JS</figcaption>
+            </figure>
+        </div>
+
+    </section>
+
+    <section id="portfolio">
+        <h2><span>Moje</span> Portfolio</h2>
+
+        <div class="portfolio_galeria">
+            <div id="portfolio_image1" class="portfolio_image">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-inner">
+                            <h4>Lorem Ipsum</h4>
+                            <p class="project_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex saepe molestiae iure accusantium, eius iste voluptatum eligendi iusto, explicabo optio.</p>
+                            <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio_image2" class="portfolio_image">
+
+            </div>
+            <div id="portfolio_image3" class="portfolio_image">
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact_data">
+            <h2 class="contact_name"><span>Paulina</span> G.</h2>
+            <address>
+                Lorem ipsum dolor <br> sit amet consectetur<br> adipisicing elit. A, iusto <br>
+                email <a href="mailto:kursy@arena108.pl"> kursy@arena.pl </a></address>
+            <div class="social">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </div>
+
+        </div>
+        
+        <form class="contact_form">
+                <input type="text" name="name" placeholder="imię i nazwisko">
+                <input type="email" name="email" placeholder="adres email">
+                <textarea name="message" placeholder="wiadomość" cols="30" rows="10"></textarea>
+                <input type="submit" value="Wyślij">
+        </form>
+    </footer>
+
+
+</body>
+
+</html>

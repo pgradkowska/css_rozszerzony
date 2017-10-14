@@ -1,0 +1,273 @@
+body {
+    font-family: 'Lato', 'Roboto', sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#menu {
+    text-align: right;
+    background-color: #2b4a64 ;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#menu .toggle, [id="drop"] {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    background-image: url(../img/header-background.jpg);
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+}
+
+#header .header-inner {
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    color: white;
+}
+
+
+h2 {
+    width: 100%;
+/*    text-align: center;*/
+    color: black;
+}
+
+section {
+    padding: 20px 30px;
+    text-align: center;
+    width: 100%;
+}
+section h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top:  60px;
+    margin-bottom: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+#contact {
+    background-color: darkslategray;
+    width: 100%;
+    height: 350px;
+   
+    
+}
+
+span {
+    color: darkgreen;
+}
+
+/* about */
+#about {
+    
+    background-color: #F9FCFE;
+    overflow: hidden
+    
+}
+
+#about > figure {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+
+#about > figure >img {
+    width: 50%;
+    max-height: 350px;
+    border: 14px #fff solid; 
+    border-radius: 15px;
+    
+}
+
+#about > article {
+    float: left;
+    width: 50%;  
+}
+
+#skills div#skills_ikony, #skills > p  {
+    text-align: center;
+}
+    
+
+ #skills_ikony figure {
+    display: inline-block;
+} 
+
+#skills skills_ikony figure img {
+    margin-bottom: 15px;
+}
+
+#portfolio_image1 {
+    background-image: url(../img/portfolio1.jpg)
+}
+
+#portfolio_image2 {
+    background-image: url(../img/portfolio2.jpg)
+}
+
+#portfolio_image3 {
+    background-image: url(../img/portfolio3.jpg)
+}
+
+
+
+.portfolio_image {
+    width: 33%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   display: inline-block;
+    position: relative;
+}
+#portfolio  {
+    text-align: center;
+    font-size: 0;
+}    
+
+
+.portfolio_galeria {
+    padding: 30px;
+}
+
+#portfolio .portfolio_galeria .portfolio_image .item-mask {
+    background-color: rgba(42,61,79,0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-out-in;
+    position: absolute;
+    font-size: initial;
+}
+
+#portfolio .portfolio_galeria .portfolio_image .item-mask:hover {
+    opacity: 1;
+}
+
+
+#portfolio .portfolio_galeria .portfolio_image .item-mask .item-content {
+    border: 4px solid #fff;
+    margin: 10px;    
+    height: 330px;
+    position: relative;
+}
+
+
+#portfolio .portfolio_galeria .portfolio_image .item-mask .item-content .item-content-inner {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    padding: 5px;
+}
+
+#portfolio .portfolio_galeria .portfolio_image .item-mask .item-content .item-content-inner a {
+    color: greenyellow;
+    font-size: 150%;
+    
+}
+#contact {
+    overflow: hidden
+
+}
+#contact .contact_data address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 60px 0;
+    
+}
+
+#contact .contact_data {
+    width: 50%;
+    float: left;
+    line-height: 30px;
+    padding-left: 40px;
+}
+
+
+#contact .contact_data .social i {
+    display: inline-block;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #fff;
+    font-size: 22px;
+  
+}
+#contact .contact_data .social i:hover {
+    color: #213b50;
+    border: 1px solid #213b50;
+    background-color: white;
+}
+    
+#contact .contact_form {
+    margin-top: 20px;
+    width: 50%;
+    float: left;
+    display: block;
+    padding-right: 40px;
+}    
+#contact .contact_form input, textarea {
+    padding: 5px 10px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #2b4a64;
+    border: #2b4a64 6px;
+    color: #fff;
+}
+    
+#contact .contact_form input, textarea:focus {
+    background-color: #426684;
+    }
+    
+#contact .contact_form input[type='submit'] {
+    background-color: limegreen;
+    
+    color: white;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    float: right;
+    border: 1px limegreen solid;
+}
+    
+}

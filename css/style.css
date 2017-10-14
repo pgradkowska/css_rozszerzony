@@ -97,33 +97,34 @@ div:lang(pl) {
     font-size: 30px;
     color:greenyellow;
 }
+/*
 div:empty {
     display: block;
     width: 300px;
     height: 300px;
     background-color: red;
 }
+*/
 /*pseudoklasy :nth-child() i nth-last-child () sluza do okreslania elementow dzieci mozemy wziac konkretne dziecko parzyste/nieparzyste lub utworzyc dokladny wzor wyboru*/
 #kontener .iner {
     display: inline-block;
     height: 300px;
     background-color: red;
-    margin-bottom: 20px;
     width: 33%;
     float: left;
     margin-right: 0.5%;
+    margin-bottom: 20px;
 }
 
+#kontener .iner:nth-child(3n+3) {
+    margin-right: 0;
+}
 /*
 #kontener .iner:nth-child(3),
 #kontener .iner:nth-child(6) {
     margin-right: 0;
 }
 */
-
-#kontener .iner:nth-child(3n+3) {
-    margin-right: 0;
-}
     
 
 #kontener .iner:nth-child(even) {
@@ -161,9 +162,81 @@ input[type^="pocz"] {
 input[type$="iec"] {
     background-color: blue;
 }
+#floated img {
+    float: left;
+}
+.clear {
+    clear:both;
+    display: block;
+}
+
+#tranzycje .inner1,
+#tranzycje .inner2 {
+    width: 50%;
+}
+
+#tranzycje .inner1 {
+    background-color: green;
+/*
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+    
+*/
+   transition-property: width;
+    transition-duration: 2s;  
+}
+
+#tranzycje .inner1:hover {
+    background-color: blue;
+    width: 800px;
+    transition: all 2s;
+}
 
 
+#tlo     {
+    width: 50%;
+    height: 600px;
+    background-image: linear-gradient(red,yellow);
+}
 
+
+/*
+#tlo     {
+    width: 50%;
+    height: 600px;
+    background-image: linear-gradient(red,yellow);
+}
+*/
+
+#tlo     {
+    width: 50%;
+    height: 600px;
+/*    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(10,255,100,0.6)), url('https://i.pinimg.com/736x/6a/45/73/6a4573c477786f788ad52c506d40a37a--funny-animals-adorable-animals.jpg');*/
+    
+    background-image: url('https://i.pinimg.com/736x/6a/45/73/6a4573c477786f788ad52c506d40a37a--funny-animals-adorable-animals.jpg');
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    overflow: scroll;
+    border: 10px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+
+/*
+    background: url('https://i.pinimg.com/736x/6a/45/73/6a4573c477786f788ad52c506d40a37a--funny-animals-adorable-animals.jpg') no repeat; 
+    background-size:cover;
+*/
+
+/*
+    background-image: url(http://bm.img.com.ua/nxs/img/prikol/images/large/8/5/290258.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+*/
+    
+}
 
 
 

@@ -1,0 +1,109 @@
+@media all and (max-width : 1200px) {
+     #portfolio .portfolio_galeria .portfolio_image {
+    width: 50%;
+    }
+    #portfolio .portfolio_galeria .portfolio_image:last-child {
+    width: 100%;
+    
+}
+
+@media all and (max-width : 992px) {
+    
+    #menu .toggle {
+        display: block;
+        background-color: white;
+        padding: 0 20px;
+        color: limegreen;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+        }
+    #menu ul {
+        display: none;
+    }
+    
+    #menu #drop:checked + ul {
+        display: block;
+    }
+    
+    #menu > ul > li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+        background-color: lightgrey;
+        
+    }
+    
+    #menu > ul > li > a {
+        color: black
+    }
+    
+    #header .header-inner h1 {
+        font-size: 3em;
+        
+    }
+    
+    #header .header-inner h2 {
+        font-size: 1.5em;
+    
+}
+    #about > figure {
+        width: 100%;
+        
+    }
+    
+    #about > figure > img {
+        max-height: inherit;
+    }
+    #about > article {
+        width: 100%
+    }
+}
+
+
+@media all and (max-width : 768px) {
+    section {
+        padding: 0 40px 50px;
+    }
+    
+   
+     #portfolio .portfolio_galeria .portfolio_image {
+    float: none;
+    width: 100%;
+    }
+    
+
+    #contact {
+    
+    height: 600px;
+    }
+    
+    #contact .contact_data,
+    #contact .contact_data h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+    #contact .contact_form {
+        width: 80%;
+        padding: 0;
+        margin: auto;
+        float: none;
+    }
+
+        
+   
+}
+
+@media all and (max-width : 576px) {
+    section {
+        padding: 0 10px 30px;
+    }
+    
+
+    }
+    
+        

@@ -1,0 +1,47 @@
+/*
+@media all and (orientation: landscape) {
+    div     {
+        background-color: red;
+    }   
+}
+
+@media all and (min-width:800px) and (max-width:1200px) {
+    div {
+        background-color: aqua;
+    }
+
+    #kontener .iner:nth-child(3n+3) {
+        margin-right: 1%;
+    }
+
+    #kontener .iner {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+*/
+
+@media all and (max-width: 1200px) {
+    div     {
+        background-color: lime;
+    }   
+    
+}
+
+@media all and (max-width: 992px) {
+      div     {
+        background-color: saddlebrown;
+    }   
+    
+}
+@media all and (max-width: 768px) {
+      div     {
+        background-color: purple;
+    }   
+    
+}
+@media all and (max-width: 480px) {
+    
+    
+}
